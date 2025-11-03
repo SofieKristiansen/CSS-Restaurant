@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | EK Resturant</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>EK Resturant</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Homepage">Home</a></li>
+            <li><a href="menu.htm" title="Menu">Menu</a></li>
+            <li><a href="contact.htm" class="highlight" title="Contact us">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+
+            <div class="hero-images">
+                <fieldset>
+                    <img src="img/map.jpg" alt="map">
+                </fieldset>
+            </div>
+
+            <div id="textContainer">
+                <address>
+                    <p>
+                        <span>Guldbergsgade 29N</span>
+                        <span>2200 Copenhagen</span>
+                    </p>
+
+                    <p>Phone number: <a href="tel:20 82 53 70" title="Call us on the phone">20 82 53 70</a></p>
+                    <p>E-mail: <a href="mailto:info@restaurantek.dk" title="Send us a e-mail">info@restaurantek.dk</a>
+                    </p>
+                </address>
+
+                <form action="mailto:info@resturantek.dk" method="POST">
+                    <fieldset>
+                        <legend>Contact form</legend>
+
+                        <div class="flex">
+                            <label for="txtFullName">Full name</label>
+                            <input type="text" id="txtFullName" name="full_name" pattern="([A-Za-z-]+ )+[A-Za-z-]+"
+                                required>
+                        </div>
+
+                        <div class="flex">
+                            <label for="txtPhone">Phone number</label>
+                            <input type="tel" id="txtPhone" name="phone_no" pattern="[0-9]{8}" required>
+                        </div>
+
+                        <div class="flex">
+                            <label for="txtEmail">E-mail</label>
+                            <input type="email" id="txtEmail" name="email" required>
+                        </div>
+
+                        <div class="flex">
+                            <label for="txtPersons">Persons</label>
+                            <input type="number" id="txtPersons" name="persons" value="2" min="1" max="20" required>
+                        </div>
+
+                        <div class="flex">
+                            <label for="txtDateTime">Date and time</label>
+                            <input type="datetime-local" id="txtDateTime" name="date_and_time" required>
+                        </div>
+
+                        <div>
+                            <label for="txtFurtherInfo">Further information</label>
+                            <textarea id="txtFurtherInfo" name="further_information"></textarea>
+                        </div>
+
+                        <div>
+                            <button type="submit">Send</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EK Web Development</p>
+    </footer>
+
+</body>
+
+</html>

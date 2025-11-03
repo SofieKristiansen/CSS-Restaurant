@@ -1,0 +1,121 @@
+@import 'styles.css';
+
+section {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+
+    div > fieldset {
+        border-radius: 1rem;
+        padding: 0.5rem;
+
+        img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+
+    #textContainer {
+        width: 100%;
+    }
+
+    address > p {
+        margin-top: 1rem;
+
+        > a {
+            color: var(--colorLink);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        span {
+            display: block;
+        }
+    }
+}
+
+form {
+    width: 100%;
+    margin-top: 2rem;
+
+    fieldset {
+        padding: 0 1rem;
+        border-radius: 1rem;
+
+        div {
+            display: flex;
+            flex-flow: column nowrap;
+            margin-bottom: 0.5rem;
+
+            #txtPersons {
+                width: 40%;
+                text-align: center;
+            }
+
+            #txtDateTime {
+                width: 70%
+            }
+        }
+
+        textarea {
+            height: 6rem;
+        }
+
+        button {
+            background-color: var(--colorHeader);
+            color: var(--colorBgHeader);
+            align-self: start;
+            border-radius: 1rem;
+            padding: 0.25rem 2rem;
+            font-family: var(--fontMain);
+            font-size: 1.25rem;
+            border: none;
+        }
+    }
+}
+
+
+@media (min-width: 769px) {
+    #txtPersons {
+        width: 10%;
+        text-align: center;
+    }
+
+    #txtDateTime {
+        width: 20%
+    }
+}
+
+@media (min-width: 1024px) {
+    section {
+        display: flex;
+        flex-flow: row-reverse;
+        gap: 2rem;
+    }
+
+    .textContainer {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .flex {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        align-items: center;
+        gap: 10px;
+
+        > input {
+            width: 100%;
+        }
+
+        #txtPersons {
+            width: 15%;
+            text-align: center;
+        }
+
+        #txtDateTime {
+            width: 100%;
+        }
+    }
+}

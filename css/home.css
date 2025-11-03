@@ -1,0 +1,30 @@
+@import 'styles.css';
+
+ul#textList {
+  list-style-type: none;
+  color: var(--colorList);
+  padding: 0rem 0.5rem;
+  margin: 0.5rem 0.5rem;
+}
+
+#textbox {
+  background-color: var(--colorBgQuote);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+#home-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  #home-img {
+    float: right;
+    width: auto;
+    margin: 0 0 0.5rem 1rem;
+  }
+}
